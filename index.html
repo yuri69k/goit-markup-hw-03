@@ -7,33 +7,38 @@
     <title>Студия</title>      
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
     <header>
-        <nav>
-            
-                    <a href="/" class="logo"><span class="logo-accent">Web</span>Studio</a>
-             <ul  class="site-nav list">
+        <div class="container nav">
+            <nav class="main-nav">
+                
+                        <a href="/" class="logo"><span class="logo-accent">Web</span>Studio</a>
+                <ul  class="site-nav list">
+                    <li>
+                        <a href="./index.html" class="link current">Студия</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="link">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="/" class="link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="auth-nav list">
                 <li>
-                    <a href="./index.html" class="link current">Студия</a>
+                    <a href="mailo:info@devstudio.com"  class="link">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li>
-                    <a href="/" class="link">Контакты</a>
+                    <a href="+380961111111"  class="link">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="auth-nav list">
-            <li>
-                <a href="mailo:info@devstudio.com"  class="link">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="+380961111111"  class="link">+38 096 111 11 11</a>
-            </li>
-        </ul>
+    </div>    
     </header>
     <main>
     <!--шапка-->
@@ -44,7 +49,7 @@
         <button type="button"  class="button secondary">Заказать услугу</button>
     </section>
     <!--Особенности-->
-    <section  class="section">
+    <section  class="section container">
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="peculiarities list">
             <li>
@@ -66,37 +71,40 @@
         </ul>
     </section>
     <section  class="section">
+        <div class="container">
         <h2 class="title">Чем мы занимаемся</h2>
-        <ul class=list>
-            <li>
-                <img src="./images/img1.jpg" alt="разроботка десктопных приложений" width="370"/>
-            </li>
-            <li>
-                <img src="./images/img2.jpg" alt="разроботка мобильных приложений" width="370"/>
-            </li>
-            <li>
-                <img src="./images/img3.jpg" alt="разроботка дизайна" width="370"/>
-            </li>
-        </ul>
+            <ul class="employment list">
+                <li>
+                    <img src="./images/img1.jpg" alt="разроботка десктопных приложений" width="370"/>
+                </li>
+                <li>
+                    <img src="./images/img2.jpg" alt="разроботка мобильных приложений" width="370"/>
+                </li>
+                <li>
+                    <img src="./images/img3.jpg" alt="разроботка дизайна" width="370"/>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section  class="section-team">
+    <section  class="section team ">
+        <div class="container">
         <h2  class="title">Наша команда</h2>
-        <ul class=list>
-            <li>
+        <ul class="section-team list">
+            <li class="item">
                 <a href="/">
                     <img src="./images/img4.jpg" alt="фото дизайнера" width="270">
                     <h3 class="name">Игорь Демьяненко</h3>
                    <p class="text">Product Designer</p>                     
                 </a>
             </li>
-            <li>
+            <li class="item">
                 <a href="/">
                     <img src="./images/img5.jpg" alt="фото разроботчика" width="270">
                     <h3 class="name">Ольга Репина</h3>
                    <p class="text">Frontend Developer</p>                     
                 </a>
             </li>
-            <li>
+            <li class="item">
                 <a href="/">
                     <img src="./images/img6.jpg" alt="фото маркетолога" width="270">
                     <h3 class="name">Николай Тарасов</h3>
@@ -104,7 +112,7 @@
                     
                 </a>
             </li>
-            <li>
+            <li class="item">
                 <a href="/">
                     <img src="./images/img7.jpg" alt="фото дизайнера пользовательского интерфейса" width="270">
                      <h3 class="name">Михаил Ермаков</h3>
@@ -112,17 +120,20 @@
                 </a>
             </li>
         </ul>
+        </div>
     </section>
     </main>
-    <footer class="footer">        
+    <footer class="footer">  
+        <div class="container">
                 <a href="/" class="logo"><span class="logo-accent">Web</span>Studio</a>
              <address class="adds">
                     г. Киев, пр-т Леси Украинки, 26
             </address>
-            <address>           
+            <address class="info">           
                 <a href="mailo:info@devstudio.com"  class="link">info@devstudio.com</a>            
                 <a href="+380961111111"  class="link">+38 096 111 11 11</a>
             </address>
+        </div>    
     </footer>
     
 </body>
