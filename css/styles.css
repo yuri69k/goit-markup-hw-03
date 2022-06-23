@@ -68,6 +68,9 @@ body {
     margin-right: auto;
     /* outline: 2px solid tomato; */
 }
+.header {
+    border-bottom: 1px solid #ececec;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -209,6 +212,11 @@ body {
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.card-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 .footer {
     max-width: 1584px;
     margin: auto;
@@ -332,7 +340,7 @@ body {
    
 }
 .pic.list .card-text {
-    padding: 20px 24px;
+    padding: 20px 20px;
 
     border: 1px solid #eeeeee;
 }
