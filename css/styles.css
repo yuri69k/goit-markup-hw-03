@@ -60,12 +60,11 @@ body {
     letter-spacing: 0.03em;
 }
 .container {
-    width: 1200px;
+    width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
-
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    
     /* outline: 2px solid tomato; */
 }
 .header {
@@ -130,14 +129,12 @@ body {
     letter-spacing: 0.02em;
 }
 .container.nav {
-    padding: 25px 0;
+    padding: 25px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.hero-title {
-    /* margin-top: 200px; */
-
+.hero-title {  
     color: var(--text-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -148,9 +145,7 @@ body {
 }
 .hero {
     padding: 200px 0;
-    margin: auto;
-
-    min-width: 1584px;
+    margin: auto;  
     background-color:var(--bg-color);
     text-align: center;
 }
@@ -168,6 +163,7 @@ body {
     margin-top: 50px;
     display: flex;
     gap: 30px;
+    justify-self: center;
 }
 .section-text {
     color: var(--text-color);
@@ -180,7 +176,7 @@ body {
 }
 .section.team {
     background-color: var(--btn-bg-color);
-    min-width: 1584px;
+    
     margin: auto;
 }
 .section .title  {
@@ -218,8 +214,7 @@ body {
     padding-bottom: 30px;
     text-align: center;
 }
-.footer {
-    min-width: 1584px;
+.footer {  
     margin: auto;
     padding: 60px 0;
     background-color:var(--bg-color);
@@ -319,6 +314,7 @@ body {
     
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border-bottom: 0;
 }
 .filter.list { 
     margin-bottom: 50px;
