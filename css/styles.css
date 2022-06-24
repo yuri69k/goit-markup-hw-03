@@ -67,6 +67,9 @@ body {
     
     /* outline: 2px solid tomato; */
 }
+header, main, footer {
+    min-width: 1170px;
+}
 .header {
     border-bottom: 1px solid #ececec;
 }
