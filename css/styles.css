@@ -9,6 +9,11 @@
     --btn-bg-color:#F5F4FA;
     --card-set-gap:30px
 }
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
 a {
     text-decoration: none;
 }
@@ -70,8 +75,9 @@ body {
 header, main, footer {
     min-width: 1170px;
 }
-.header {
-    border-bottom: 1px solid #ececec;
+header {
+    padding: 25px 0;
+    border: 1px solid #ECECEC;
 }
 .section {
     padding-top: 94px;
@@ -132,7 +138,7 @@ header, main, footer {
     letter-spacing: 0.02em;
 }
 .container.nav {
-    padding: 25px 15px;
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,6 +157,9 @@ header, main, footer {
     margin: auto;  
     background-color:var(--bg-color);
     text-align: center;
+}
+.features {
+    padding-top: 94px;
 }
 .peculiarities {
     display: flex;  
