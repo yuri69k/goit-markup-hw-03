@@ -150,7 +150,7 @@ body {
     padding: 200px 0;
     margin: auto;
 
-    max-width: 1584px;
+    min-width: 1584px;
     background-color:var(--bg-color);
     text-align: center;
 }
@@ -180,7 +180,7 @@ body {
 }
 .section.team {
     background-color: var(--btn-bg-color);
-    max-width: 1584px;
+    min-width: 1584px;
     margin: auto;
 }
 .section .title  {
@@ -219,7 +219,7 @@ body {
     text-align: center;
 }
 .footer {
-    max-width: 1584px;
+    min-width: 1584px;
     margin: auto;
     padding: 60px 0;
     background-color:var(--bg-color);
