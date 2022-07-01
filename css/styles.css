@@ -7,7 +7,8 @@
     --text-white-color: #FFFFFF;
     --text-white-color-footer:rgba(255, 255, 255, 0.6);
     --btn-bg-color:#F5F4FA;
-    --card-set-gap:30px
+    --card-set-gap:30px;
+    --social-bck: #afb1b8;
 }
 *,
 *::after,
@@ -116,7 +117,6 @@ header {
    
 }
 
-
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -125,9 +125,15 @@ header {
 .auth-nav .link.current,
 .filter .button.current {
     color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .auth-nav .link {
     color: var(--text-color);
+    display: flex;
+    align-items:center;
+    gap: 10px;
+  
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -137,15 +143,18 @@ header {
 .auth-nav {
     display: flex;
     gap: 50px;
+    align-items: center;
 
     font-weight: 500;        
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.container.nav {
-   
-    display: flex;
-    align-items: center;
+.icon-mail,
+.icon-phone {    
+    fill: currentColor;
+}
+.container.nav {   
+    display: flex;   
     justify-content: space-between;
 }
 .hero-title {  
@@ -161,10 +170,42 @@ header {
     padding: 200px 0;
     margin: auto;  
     background-color:var(--bg-color);
-    text-align: center;
+    text-align: center;    
+           
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+  
+    background-image:
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/img_bg.jpg");
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        
+}
+.hero .button.secondary {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .features {
     padding-top: 94px;
+}
+.features-icon {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+   
+}
+.features-icons {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--btn-bg-color);
 }
 .peculiarities {
     display: flex;  
@@ -192,9 +233,39 @@ header {
     text-transform: uppercase;
 }
 .section.team {
-    background-color: var(--btn-bg-color);
-    
+    background-color: var(--btn-bg-color);    
     margin: auto;
+}
+.social {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    gap: 10px;    
+}
+.social-link {   
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);      
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill:currentColor;
+}
+.social-link:hover,
+.social-link:focus  {   
+      background-color:var(--accent-color);  
+}
+.social-link:focus,
+.social-link:hover .social-icon {   
+    fill: var(--text-white-color);  
 }
 .section .title  {
     font-weight: 700;
@@ -231,6 +302,37 @@ header {
     padding-bottom: 30px;
     text-align: center;
 }
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.client-icon {   
+    fill: currentColor; 
+}
+.company {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.company a {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--social-bck);
+    border: 1px solid var(--social-bck);
+    border-radius: 4px; 
+}
+.company a:hover,
+.company a:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
 .footer {  
     margin: auto;
     padding: 60px 0;
@@ -249,7 +351,10 @@ header {
 .footer .link:focus,
 .filter .button.primary:hover,
 .filter .button.primary:focus {
-    color: var(--accent-color);
+    color: var(--text-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .adds {
     margin-top: 20px;
@@ -263,9 +368,47 @@ header {
     flex-direction: column;
     margin-top: 9px;
     gap: 9px;
-    }
+}
 .footer .link {
-     font-style: normal}
+     font-style: normal
+}
+.action-title {
+    display: inline-flex;
+    font-weight: 700;       
+    line-height: 1.14;       
+    text-transform: uppercase;
+    color: var(--text-white-color);
+}
+.footer .social.list {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.actions .social-link {    
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;    
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+.actions .social-icon {
+    fill: var(--text-white-color);
+}
+.actions .social-link:hover,
+.actions .social-link:focus  {   
+      background-color:var(--accent-color);  
+}
 
 .hero .button.secondary{
     padding: 10px 32px;    
@@ -341,12 +484,12 @@ header {
 }
 .pic.list {  
 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-        margin-top: calc(-1 * var(--card-set-gap));
-        margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
     
     
 }
@@ -361,6 +504,14 @@ header {
     text-align:left;
 
     border: 1px solid #eeeeee;
+}
+.pic.list .item:focus,
+.pic.list .item:hover {
+    background: var(--text-white-color);       
+    box-shadow: 0px 1px 1px 
+        rgba(0, 0, 0, 0.12), 0px 4px 4px 
+        rgba(0, 0, 0, 0.06), 1px 4px 6px 
+        rgba(0, 0, 0, 0.16);
 }
 
 
